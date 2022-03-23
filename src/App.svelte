@@ -149,7 +149,7 @@
 
 		<div>
 			<div class="helpName resultBar">
-				{#each "Harumachi".split("") as letter, i}
+				{#each "Harumachi Clover".split("") as letter, i}
 					{#if i == 0}
 						<div class="resultBarLetter" style="background-color: #d4ff8a;">
 							{letter}
@@ -170,7 +170,7 @@
 
 		<div>
 			<div class="helpName resultBar">
-				{#each "Harumachi".split("") as letter, i}
+				{#each "Harumachi Clover".split("") as letter, i}
 					{#if i == 1}
 						<div class="resultBarLetter" style="background-color: #fffd8c;">
 							{letter}
@@ -191,7 +191,7 @@
 
 		<div>
 			<div class="helpName resultBar">
-				{#each "Harumachi".split("") as letter, i}
+				{#each "Harumachi Clover".split("") as letter, i}
 					<div class="resultBarLetter">
 						{letter}
 					</div>
