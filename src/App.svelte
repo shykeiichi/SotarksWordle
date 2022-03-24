@@ -135,9 +135,9 @@
 		// 	return 1;
 		// }
 
-		if(nameToday[index] == letter) {
+		if(nameToday.toLowerCase()[index] == letter.toLowerCase()) {
 			return 2;
-		} else if(word.includes(letter)) {
+		} else if(nameToday.toLowerCase().includes(letter.toLowerCase())) {
 			return 1;
 		} else {
 			return 0;
