@@ -112,27 +112,35 @@
 	};
 
 	function calculateLetter(index, letter, word) {
-		if(index < nameToday.length) {
-			if(nameToday[index].toLowerCase() == letter.toLowerCase()) {
-				return 2;
-			}
-		}
+		// if(index < nameToday.length) {
+		// 	if(nameToday[index].toLowerCase() == letter.toLowerCase()) {
+		// 		return 2;
+		// 	}
+		// }
 
-		let amountOf = nameToday.toLowerCase().split(letter.toLowerCase()).length - 1;
-		let letterPosition = 0;
+		// let amountOf = nameToday.toLowerCase().split(letter.toLowerCase()).length - 1;
+		// let letterPosition = 0;
 
-		for(var i = 0; i < word.length; i++) {
-			if(word[i].toLowerCase() == letter.toLowerCase()) {
-				letterPosition ++;
-			}
-		}
+		// for(var i = 0; i < word.length; i++) {
+		// 	if(word[i].toLowerCase() == letter.toLowerCase()) {
+		// 		letterPosition ++;
+		// 	}
+		// }
 
-		// console.log(letterPosition);
+		// // console.log(letterPosition);
 
-		if(letterPosition > amountOf) {
-			return 0;
-		} else {
+		// if(letterPosition > amountOf) {
+		// 	return 0;
+		// } else {
+		// 	return 1;
+		// }
+
+		if(nameToday[index] == letter) {
+			return 2;
+		} else if(word.includes(letter)) {
 			return 1;
+		} else {
+			return 0;
 		}
 	}
 </script>
